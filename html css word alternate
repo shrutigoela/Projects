@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Word enhancer</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	
+		body{
+		font-family: "brush script MT",cursive;	
+		}
+        main {
+        	max-width: 300px;
+        	margin:0 auto ;	
+        }
+        body{
+        	background-color:#feda84;
+        }
+        lable{
+        	display:block;
+        }
+        button {
+        	color:red;
+        	width:150px;
+        }
+        button:hover {
+        	background: black;
+        	color:red;
+        }
+        textarea{
+        	background:#;
+        }
+        .hidden{
+        	display: inline;
+        }
+        .text-report dt:after{
+        	content:":";
+        }
+        h1 {
+        	text-align:center;
+        	background-color:white;
+        	border-style: groove;
+        	color:#A8A6F5;
+        	text-shadow: 2px 2px black;
+        	font-family:"papyrus",Fantasy;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<main>
+			<h1>WORD ENHANCER</h1>
+			<p style="font-size:200%;">Type the word you need a substitute for:</p>
+			<form>
+				<!-- for attribute in the label tag is used to specifiy the id -->
+				<div>
+					<label for="text" style="font-size:200%;">Word:</label>
+					<textarea cols="45" rows="2" id="text" name="text" placeholder="place the text here" required>
+					</textarea> 
+				</div>
+                                
+				<div>
+					<button type="submit">Alternative word</button>
+				</div><BR>
+			</form>
+			<dl class="hidden text report">
+				<dt style="font-size:200%;" >Synonym:</dt>
+                                <BR>
+                                
+
+				<dd></dd>
+				<dt style="font-size:200%;">Rhyming word:</dt>
+                                <BR>
+				<dd></dd>
+				<dt style="font-size:200%;">Antonym:</dt>
+				<dd></dd>	
+			</dl>
+		</main>
+	</div>
+
+</body>
+</html>
