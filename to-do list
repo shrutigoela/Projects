@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do list</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		body{
+		font-family: "Times",cursive;	
+		}
+        main {
+        	max-width: 300px;
+        	margin:0 auto ;	
+        }
+        body{
+        	background-color:#dca5a5;
+        }
+        lable{
+        	display:block;
+        }
+        button {
+        	color:red;
+        	width:250px;
+        }
+        button:hover {
+        	background: red;
+        	color:white;
+        }
+        button {
+        	color:red;
+        	width:250px;
+        }
+         button {
+        	color:red;
+        	width:250px;
+        }
+        textarea{
+        	background:#;
+        }
+        .hidden{
+        	display: inline;
+        }
+        .text-report dt:after{
+        	content:":";
+        }
+        h1 {
+        	text-align:center;
+        	background-color:red;
+        	border-style: groove;
+        	color:#a8a6f6;
+        	text-shadow: 3px 3px black;
+        	font-family:"script",Fantasy;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<main>
+			<h1>To-Do List</h1>
+			<p style="font-size:150%;">Add or remove tasks:</p>
+			<form>
+				<!-- for attribute in the label tag is used to specifiy the id -->
+				<div>
+					<label for="text" style="font-size:200%;">Tasks to be done:</label>
+					<textarea cols="45" rows="2" id="text" name="text" placeholder="place the text here" required>
+					</textarea> 
+				</div>
+                              
+				<div>
+					<button type="submit">Add entry</button>
+				</div><BR>
+                                
+                                <div>
+					<button type="submit">Remove entry</button>
+				</div><BR>
+			</form>
+			<dl class="hidden text report">
+				<dt style="font-size:150%;" >Completed tasks:</dt>
+                                <BR>
+                                
+
+				<dd></dd>
+				<dt style="font-size:150%;">Tasks left:</dt>
+                                <BR>
+				<dd></dd>
+					
+			</dl>
+                               <div>
+					<button type="submit">Reset List</button>
+				</div><BR>
+		</main>
+	</div>
+
+</body>
+</html>
